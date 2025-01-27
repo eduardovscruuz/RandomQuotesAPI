@@ -20,10 +20,6 @@ namespace RandomQuotesAPI.Services
             var quotes = GetQuotes(language);
             return quotes.FirstOrDefault(q => q.Id == id);
         }
-        public Quote GetQuoteById(string language, int id)
-        {
-            var quotes = GetQuotes(language);
-            return quotes.FirstOrDefault(q => q.Id == id);
-        }
+
     }
 }
