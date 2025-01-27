@@ -1,9 +1,9 @@
-# Use a imagem oficial do .NET 9 como base
+# Use uma imagem do .NET SDK mais recente, que é compatível com o Vercel
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 80
 
-# Use a imagem do SDK do .NET 9 para compilar o projeto
+# Use a imagem do SDK do .NET para compilar
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 COPY ["RandomQuotesAPI/RandomQuotesAPI.csproj", "RandomQuotesAPI/"]
@@ -20,4 +20,3 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "RandomQuotesAPI.dll"]
-
