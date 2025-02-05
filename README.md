@@ -47,4 +47,5 @@ Cada quote é representada por um objeto JSON com as seguintes propriedades:
 ### Tecnologias Usadas
 
 - **.NET 9** (Minimal APIs)
+- **C#**
 - **JSON** (para armazenar as quotes)
