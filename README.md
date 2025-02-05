@@ -3,6 +3,8 @@
 ## Descrição
 Esta API fornece quotes aleatórias da série The Office em dois idiomas: português (PT-BR) e inglês (EN-US). A API lê os arquivos JSON contendo as quotes e, com base na linguagem e no ID fornecido na URL, retorna a quote correspondente.
 
+[Aplicação desenvolvida em Angular](https://github.com/eduardovscruuz/OfficeQuotes-Angular) (Clique aqui pra ver o repositório front-end)
+
 ## Funcionalidades
 - **GET /api/quotes/{language}/{id}**: Retorna uma quote específica com o id fornecido e na língua indicada (pt para português e en para inglês).
   - Exemplo de URL: `/api/quotes/pt/1` retorna a quote com id = 1 no arquivo de quotes em português.
